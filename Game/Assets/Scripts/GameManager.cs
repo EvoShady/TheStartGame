@@ -9,6 +9,13 @@ public class GameManager : MonoBehaviour
     public CinemachineVirtualCamera firstPersonCamera;
     public CinemachineFreeLook thirdPersonCamera;
     public SkinnedMeshRenderer meshRendererFirstPersonView;
+
+    private void Start()
+    {
+        firstPersonCamera.enabled = false;
+        thirdPersonCamera.enabled = true;
+    }
+
     private void Update()
     {
         if (Input.GetKeyDown(KeyCode.F))
