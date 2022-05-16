@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -8,6 +6,7 @@ public class PauseMenuScript : MonoBehaviour
     private static bool gameIsPaused = false;
     public GameObject inGameMenu;
     public GameObject inGameUI;
+    public GameObject settingsMenu;
     private string mainMenuSceneName = "MainMenu";
 
     private void Update()
@@ -45,8 +44,8 @@ public class PauseMenuScript : MonoBehaviour
 
     public void OptionsMenu()
     {
-        Debug.Log("Options Menu accessed!");
-        //TODO
+        settingsMenu.SetActive(true);
+        inGameMenu.SetActive(false);
     }
 
     public void LoadMainMenu()
