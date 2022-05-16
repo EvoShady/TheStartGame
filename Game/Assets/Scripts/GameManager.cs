@@ -17,6 +17,9 @@ public class GameManager : MonoBehaviour
         }
 
         DontDestroyOnLoad(gameObject);
+
+        QualitySettings.SetQualityLevel(3); // Default "High" quality graphics
+        Screen.fullScreen = true;
     }
     public void RestartCurrentLevel()
     {

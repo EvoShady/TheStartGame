@@ -7,7 +7,7 @@ public class PauseMenuScript : MonoBehaviour
     public GameObject inGameMenu;
     public GameObject inGameUI;
     public GameObject settingsMenu;
-    private string mainMenuSceneName = "MainMenu";
+    private readonly string mainMenuSceneName = "MainMenu";
 
     private void Update()
     {
@@ -15,7 +15,10 @@ public class PauseMenuScript : MonoBehaviour
         {
             if (gameIsPaused)
             {
-                ResumeGame();
+                if (!settingsMenu.activeInHierarchy)
+                {
+                    ResumeGame();
+                }
             }
             else
             {
