@@ -4,24 +4,20 @@ using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
 
-public class HealthBarScript : MonoBehaviour
+public class HealthScript : MonoBehaviour
 {
     public Slider healthSlider;
-    public TextMeshProUGUI healthText;
+    public TextMeshProUGUI healthValue;
     
     public void SetMaxHealth(int health)
     {
         healthSlider.maxValue = health;
         healthSlider.value = health;
     }
-    public void setHealth(int health)
+    public void SetHealth(int health)
     {
         healthSlider.value = health;
-        healthText.text = health.ToString();
+        healthValue.text = health.ToString();
     }
 
-    public void LateUpdate()
-    {
-        setHealth(((int)healthSlider.value));
-    }
 }
