@@ -17,5 +17,4 @@ public class HealthScript : MonoBehaviour
         healthSlider.value = health;
         healthValue.text = health.ToString();
     }
-
 }

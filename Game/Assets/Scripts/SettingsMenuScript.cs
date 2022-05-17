@@ -8,7 +8,6 @@ public class SettingsMenuScript : MonoBehaviour
 {
     public GameObject inGameMenu;
     public GameObject settingsMenu;
-    public AudioMixer audioMixer;
     public Slider audioMasterSlider;
     public TMP_Dropdown resolutionDropdown;
     Resolution[] resolutions;
@@ -53,5 +52,11 @@ public class SettingsMenuScript : MonoBehaviour
     public void SetFullScreen(bool isFullScreen)
     {
         Screen.fullScreen = isFullScreen;
+    }
+
+    public void SetResolution(int resolutionIndex)
+    {
+        Resolution resolution = resolutions[resolutionIndex];
+        Screen.SetResolution(resolution.width, resolution.height, Screen.fullScreen);
     }
 }
