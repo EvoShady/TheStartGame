@@ -6,6 +6,7 @@ public class ElevatorButton : Interactable
 {
 
     public Animator elevatorAnimator;
+    public Animator buttonAnimator;
 
     public override string GetDescription()
     {
@@ -14,6 +15,7 @@ public class ElevatorButton : Interactable
 
     public override void Interact()
     {
-        elevatorAnimator.Play("ElevatorUpAnimation");
+        buttonAnimator.Play("ButtonPressedAnimation");
+        elevatorAnimator.Play("GuardRailUp");
     }
 }

@@ -6,6 +6,7 @@ public class StartingMenuScript : MonoBehaviour
     private bool isAboutTabActive = false;
     public GameObject aboutPanel;
     public GameObject mainMenu;
+    public GameObject settingsPanel;
     public void StartGame()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
@@ -28,5 +29,11 @@ public class StartingMenuScript : MonoBehaviour
     public void QuitGame()
     {
         Application.Quit();
+    }
+
+    public void OpenSettingsMenu()
+    {
+        mainMenu.SetActive(false);
+        settingsPanel.SetActive(true);
     }
 }

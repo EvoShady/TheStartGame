@@ -3,7 +3,7 @@ using Cinemachine;
 
 public class CameraControllerScript : MonoBehaviour
 {
-    private static bool isFirstPersonView = false;
+    private static bool isFirstPersonView = true;
     public CinemachineVirtualCamera firstPersonCamera;
     public CinemachineFreeLook thirdPersonCamera;
     public SkinnedMeshRenderer meshRendererFirstPersonView;
@@ -14,6 +14,7 @@ public class CameraControllerScript : MonoBehaviour
         firstPersonCamera.enabled = true;
         thirdPersonCamera.enabled = false;
         FirstPersonCrosshair.SetActive(true);
+        meshRendererFirstPersonView.shadowCastingMode = UnityEngine.Rendering.ShadowCastingMode.ShadowsOnly;
     }
 
     private void Update()
