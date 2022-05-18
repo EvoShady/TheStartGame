@@ -25,5 +25,10 @@ public class PlayerDamageScript : MonoBehaviour
     {
         currentHealth -= damage;
         healthBar.SetHealth(currentHealth);
+
+        if(currentHealth <= 0)
+        {
+            FindObjectOfType<GameManager>().RestartCurrentLevel();
+        }
     }
 }

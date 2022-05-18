@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using Cinemachine;
 
@@ -9,11 +7,13 @@ public class CameraControllerScript : MonoBehaviour
     public CinemachineVirtualCamera firstPersonCamera;
     public CinemachineFreeLook thirdPersonCamera;
     public SkinnedMeshRenderer meshRendererFirstPersonView;
+    public GameObject FirstPersonCrosshair;
 
     private void Start()
     {
-        firstPersonCamera.enabled = false;
-        thirdPersonCamera.enabled = true;
+        firstPersonCamera.enabled = true;
+        thirdPersonCamera.enabled = false;
+        FirstPersonCrosshair.SetActive(true);
     }
 
     private void Update()
@@ -36,6 +36,7 @@ public class CameraControllerScript : MonoBehaviour
         isFirstPersonView = false;
         thirdPersonCamera.enabled = true;
         firstPersonCamera.enabled = false;
+        FirstPersonCrosshair.SetActive(false);
         meshRendererFirstPersonView.shadowCastingMode = UnityEngine.Rendering.ShadowCastingMode.On;
     }
     private void SetFirstPersonView()
@@ -43,6 +44,7 @@ public class CameraControllerScript : MonoBehaviour
         isFirstPersonView = true;
         firstPersonCamera.enabled = true;
         thirdPersonCamera.enabled = false;
+        FirstPersonCrosshair.SetActive(true);
         meshRendererFirstPersonView.shadowCastingMode = UnityEngine.Rendering.ShadowCastingMode.ShadowsOnly;
     }
 }
