@@ -6,7 +6,7 @@ public class DoorController : MonoBehaviour
 
     private void Start()
     {
-        doorAnimator = transform.parent.parent.GetComponent<Animator>();
+        doorAnimator = transform.parent.GetComponent<Animator>();
     }
 
     private void OnTriggerEnter(Collider other)
