@@ -14,6 +14,7 @@ public class SettingsMenuScript : MonoBehaviour
 
     private void Start()
     {
+        PlayerPrefs.DeleteAll();
         resolutions = Screen.resolutions;
         resolutionDropdown.ClearOptions();
 

@@ -15,7 +15,7 @@ public class ElevatorButton : Interactable
 
     public override void Interact()
     {
-        buttonAnimator.Play("ButtonPressedAnimation");
-        elevatorAnimator.Play("GuardRailUp");
+        buttonAnimator.SetTrigger("useButton");
+        elevatorAnimator.SetTrigger("useElevator");
     }
 }
