@@ -9,6 +9,7 @@ public class MovementTrigger : MonoBehaviour
         {
             FindObjectOfType<TutorialController>().MovementTriggerEnter();
             isTriggered = true;
+            FindObjectOfType<AudioManager>().Play("Movement Voice");
         }
     }
 }

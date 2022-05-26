@@ -31,8 +31,7 @@ public class TutorialController : MonoBehaviour
     }
     public void FallDamageTriggerEnter()
     {
-        eventText.SetText("Falling from an excessive height will result in you taking fall damage." +
-            "\nBe careful, you are not indestructible.");
+        eventText.SetText("Falling from an excessive height will result in you taking fall damage.");
         textBackground.SetActive(true);
         MakeHealthBarVisible();
         isEventActive = true;

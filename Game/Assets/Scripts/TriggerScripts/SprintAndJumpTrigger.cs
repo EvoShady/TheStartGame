@@ -9,6 +9,7 @@ public class SprintAndJumpTrigger : MonoBehaviour
         {
             FindObjectOfType<TutorialController>().SprintAndJumpTriggerEnter();
             isTriggered = true;
+            FindObjectOfType<AudioManager>().Play("Sprint And Jump Voice");
         }
     }
 }

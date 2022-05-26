@@ -9,6 +9,7 @@ public class ParkourRoomTrigger : MonoBehaviour
         {
             FindObjectOfType<TutorialController>().PakrourRoomTrigger();
             isTriggered = true;
+            FindObjectOfType<AudioManager>().Play("Parkour Room Voice");
         }
     }
 }

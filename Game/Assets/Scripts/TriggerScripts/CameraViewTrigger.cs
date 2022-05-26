@@ -10,6 +10,7 @@ public class CameraViewTrigger : MonoBehaviour
         {
             FindObjectOfType<TutorialController>().CameraViewTriggerEnter();
             isTriggered = true;
+            FindObjectOfType<AudioManager>().Play("Camera Switch Voice");
         }
     }
 }

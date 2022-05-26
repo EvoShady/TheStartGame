@@ -9,6 +9,7 @@ public class JumpGapTrigger : MonoBehaviour
         {
             FindObjectOfType<TutorialController>().JumpGapTriggerEnter();
             isTriggered = true;
+            FindObjectOfType<AudioManager>().Play("Jump Gap Voice");
         }
     }
 }

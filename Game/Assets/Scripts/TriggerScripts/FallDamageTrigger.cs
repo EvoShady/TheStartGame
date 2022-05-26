@@ -9,6 +9,7 @@ public class FallDamageTrigger : MonoBehaviour
         {
             FindObjectOfType<TutorialController>().FallDamageTriggerEnter();
             isTriggered = true;
+            FindObjectOfType<AudioManager>().Play("FallDamage Voice");
         }
     }
 }

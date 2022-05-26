@@ -9,6 +9,7 @@ public class ElevatorTrigger : MonoBehaviour
         {
             FindObjectOfType<TutorialController>().ElevatorTriggerEnter();
             isTriggered = true;
+            FindObjectOfType<AudioManager>().Play("Take Elevator Voice");
         }
     }
 }
