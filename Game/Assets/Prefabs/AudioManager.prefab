@@ -46,7 +46,49 @@ MonoBehaviour:
   sounds:
   - name: Background Music
     clip: {fileID: 8300000, guid: 94315154c5b55f24391df0ba7b3389b2, type: 3}
-    volume: 1
+    volume: 0.05
     pitch: 1
     loop: 1
+    audioSource: {fileID: 0}
+  - name: Movement Voice
+    clip: {fileID: 8300000, guid: 4778d987818e4854da58ef8e1b582d58, type: 3}
+    volume: 0.5
+    pitch: 1
+    loop: 0
+    audioSource: {fileID: 0}
+  - name: Sprint And Jump Voice
+    clip: {fileID: 8300000, guid: 8e7199d7d88551542bbee93596af53a2, type: 3}
+    volume: 0.5
+    pitch: 1
+    loop: 0
+    audioSource: {fileID: 0}
+  - name: FallDamage Voice
+    clip: {fileID: 8300000, guid: f00c4006df2a6f6478880893e8cd568c, type: 3}
+    volume: 0.5
+    pitch: 1
+    loop: 0
+    audioSource: {fileID: 0}
+  - name: Jump Gap Voice
+    clip: {fileID: 8300000, guid: 5ac28b0e04d73a542bf8b064f938c0ce, type: 3}
+    volume: 0.5
+    pitch: 1
+    loop: 0
+    audioSource: {fileID: 0}
+  - name: Take Elevator Voice
+    clip: {fileID: 8300000, guid: 85ae27233ce8c40408fbb89deff2b9ef, type: 3}
+    volume: 0.5
+    pitch: 1
+    loop: 0
+    audioSource: {fileID: 0}
+  - name: Camera Switch Voice
+    clip: {fileID: 8300000, guid: f9a11f6064dbdef44bf767042a2bdad9, type: 3}
+    volume: 0.5
+    pitch: 1
+    loop: 0
+    audioSource: {fileID: 0}
+  - name: Parkour Room Voice
+    clip: {fileID: 8300000, guid: 6e81a6e1e8a95044984dcc23d2b65ac0, type: 3}
+    volume: 0.5
+    pitch: 1
+    loop: 0
     audioSource: {fileID: 0}

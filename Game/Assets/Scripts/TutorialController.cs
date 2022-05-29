@@ -9,6 +9,11 @@ public class TutorialController : MonoBehaviour
     [SerializeField] GameObject elevator;
     [SerializeField] bool isEventActive = false;
 
+
+    private void Start()
+    {
+        FindObjectOfType<AudioManager>().Play("Background Music");
+    }
     public void MovementTriggerEnter()
     {
         eventText.SetText("Press W,A,S,D To Move." +

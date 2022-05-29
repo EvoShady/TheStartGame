@@ -31,11 +31,6 @@ public class AudioManager : MonoBehaviour
         }
     }
 
-    private void Start()
-    {
-        Play("Background Music");
-    }
-
     public void Play (string name)
     {
         Sound sound = System.Array.Find(sounds, sound => sound.name == name);
