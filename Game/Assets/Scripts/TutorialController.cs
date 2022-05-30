@@ -8,7 +8,7 @@ public class TutorialController : MonoBehaviour
     [SerializeField] GameObject healthBar;
     [SerializeField] GameObject elevator;
     [SerializeField] bool isEventActive = false;
-
+    [SerializeField] Animator tutorialAnimator;
 
     private void Start()
     {
@@ -63,6 +63,12 @@ public class TutorialController : MonoBehaviour
         textBackground.SetActive(true);
         isEventActive = true;
     }
+
+    public void EndCutsceneTriggerEnter()
+    {
+        tutorialAnimator.SetTrigger("EndCutsceneTrigger");
+    }
+
     private void MakeHealthBarVisible()
     {
         healthBar.SetActive(true);

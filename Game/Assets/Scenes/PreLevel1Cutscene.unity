@@ -20108,7 +20108,7 @@ Transform:
   - {fileID: 90819793}
   - {fileID: 1125059698}
   m_Father: {fileID: 800812194}
-  m_RootOrder: 191
+  m_RootOrder: 188
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &424239463
 PrefabInstance:
@@ -32477,7 +32477,7 @@ Animator:
   m_GameObject: {fileID: 679913968}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 9ac555dac0128734eadbbc32956909d1, type: 2}
+  m_Controller: {fileID: 9100000, guid: a170b3949f16e3643b783ffa16eb0659, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -37282,6 +37282,7 @@ Transform:
   - {fileID: 1022529645}
   - {fileID: 1316528463}
   - {fileID: 108996398}
+  - {fileID: 824399978}
   - {fileID: 1783866113}
   - {fileID: 207592391}
   - {fileID: 1294684614}
@@ -37409,7 +37410,6 @@ Transform:
   - {fileID: 1168088938}
   - {fileID: 1523602532}
   - {fileID: 1269386575}
-  - {fileID: 824399978}
   - {fileID: 20309265}
   - {fileID: 638953870}
   - {fileID: 1639178774}
@@ -37464,10 +37464,10 @@ Transform:
   - {fileID: 575576559}
   - {fileID: 1796865983}
   - {fileID: 1310082658}
+  - {fileID: 423618266}
   - {fileID: 1467130832}
   - {fileID: 1857574641}
   - {fileID: 386446848}
-  - {fileID: 423618266}
   - {fileID: 195910109}
   - {fileID: 1596015421}
   - {fileID: 2107648911}
@@ -37522,6 +37522,7 @@ Transform:
   - {fileID: 568981987}
   - {fileID: 888433255}
   - {fileID: 667704105}
+  - {fileID: 1902981825}
   - {fileID: 1213595462}
   - {fileID: 1821684707}
   - {fileID: 1735253295}
@@ -37531,7 +37532,6 @@ Transform:
   - {fileID: 542842194}
   - {fileID: 541431671}
   - {fileID: 1626923050}
-  - {fileID: 1902981825}
   - {fileID: 169796464}
   - {fileID: 1738543993}
   - {fileID: 1746393722}
@@ -38174,8 +38174,8 @@ Camera:
     y: 0
     width: 1
     height: 1
-  near clip plane: 0.3
-  far clip plane: 1000
+  near clip plane: 0.01
+  far clip plane: 100
   field of view: 60
   orthographic: 0
   orthographic size: 5
@@ -38859,7 +38859,7 @@ Transform:
   - {fileID: 857479166}
   - {fileID: 384847523}
   m_Father: {fileID: 800812194}
-  m_RootOrder: 133
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &825648995
 PrefabInstance:
@@ -87700,7 +87700,7 @@ Transform:
   - {fileID: 265406647}
   - {fileID: 42787432}
   m_Father: {fileID: 800812194}
-  m_RootOrder: 255
+  m_RootOrder: 246
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
 --- !u!114 &1902981826
 MonoBehaviour:
